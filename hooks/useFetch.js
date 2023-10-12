@@ -42,4 +42,6 @@ const useFetch = (endpoint) => {
         setIsLoading(true)
         fetchData()
       }
+
+      return { data, isLoading, error, refetch }
 }
